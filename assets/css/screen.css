@@ -788,6 +788,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     font-weight: 400;
     letter-spacing: 0.2px;
     text-transform: uppercase;
+    text-align: right;
 }
 
 .post-card-byline-content span {
