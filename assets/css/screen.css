@@ -155,8 +155,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 6vw 3vw;
-    min-height: 200px;
-    max-height: 340px;
+    min-height: 100px;
+    max-height: 120px;
 }
 
 .site-title {
@@ -194,18 +194,18 @@ body {
 }
 
 .site-home-header .site-header-content {
-    padding: 5vw 3vw 6vw;
+    padding: 2vw 1vw 3vw;
 }
 
 .site-home-header .site-title {
-    font-size: 5.5rem;
+    font-size: 2.5rem;
     text-align: center;
 }
 
 .site-home-header .site-description {
-    font-size: 2.2rem;
+    font-size: 1.75rem;
     font-weight: 300;
-    text-align: center;
+    text-align: left;
 }
 
 
