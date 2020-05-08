@@ -32,7 +32,7 @@ production stylesheet in assets/built/screen.css
 @import "global.css";
 
 body {
-    background: #fff;
+    background: #efefef;
 }
 
 .img {
@@ -611,21 +611,33 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
     display: flex;
     flex-wrap: wrap;
     margin: 0 -20px;
-    padding: 50px 0 0;
-    background: #fff;
+    padding: 40px 0 0 0;
 }
 
 .post-card {
-    position: relative;
-    flex: 1 1 301px;
+    flex: 1 1 300px;
     display: flex;
     flex-direction: column;
     overflow: hidden;
-    margin: 0 0 40px;
-    padding: 0 20px 40px;
-    min-height: 220px;
-    border-bottom: 1px solid color(var(--lightgrey) l(+12%));
+    margin: 0 20px 40px;
+    padding: 20px 20px 40px;
+    min-height: 200px;
+    background: #fff center center;
     background-size: cover;
+    border-radius: 5px;
+    box-shadow: rgba(91, 94, 97, 0.06) 8px 14px 38px, rgba(39, 44, 49, 0.03) 1px 3px 8px;
+    transition: all 0.5s ease;
+}
+
+.post-card-tags {
+    display: block;
+    margin-bottom: 4px;
+    color: var(--midgrey);
+    font-size: 1.2rem;
+    line-height: 1.15em;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 .post-card-image-link {
@@ -676,8 +688,6 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-card-title {
     margin: 0 0 0.4em;
-    line-height: 1.15em;
-    transition: color 0.2s ease-in-out;
 }
 
 .no-image .post-card-title {
@@ -692,7 +702,7 @@ The knock-on effect of this is ugly browser-scroll bars at the bottom, so 80px o
 
 .post-card-excerpt {
     max-width: 56em;
-    color: var(--midgrey);
+    color: var(--darkgrey);
     font-family: Georgia, serif;
 }
 
@@ -986,7 +996,7 @@ make sure this only happens on large viewports / desktop-ish devices.
 
 .post-full-custom-excerpt {
     margin: 20px 0 0;
-    color: var(--midgrey);
+    color: var(--darkgrey);
     font-family: Georgia, serif;
     font-size: 2.3rem;
     line-height: 1.4em;
@@ -1021,7 +1031,7 @@ make sure this only happens on large viewports / desktop-ish devices.
     padding: 0 170px 6vw;
     min-height: 230px;
     font-family: Georgia, serif;
-    font-size: 2.0rem;
+    font-size: 1.6rem;
     line-height: 1.6em;
     background: #fff;
 }
@@ -1269,7 +1279,7 @@ Usage (In Ghost editor):
 
 .post-full-content h1 {
     margin: 0.5em 0 0.4em;
-    font-size: 4.2rem;
+    font-size: 2.2rem;
     line-height: 1.25em;
     font-weight: 600;
 }
@@ -1499,7 +1509,7 @@ Usage (In Ghost editor):
 .post-full-byline {
     display: flex;
     justify-content: space-between;
-    margin: 35px 0 0;
+    margin: 15px 0 0;
     padding-top: 15px;
     border-top: 1px solid color(var(--lightgrey) l(+10%));
 }
@@ -1887,7 +1897,6 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-title {
-    color: #fff;
     opacity: 0.8;
     transition: all 0.2s ease-in-out;
 }
@@ -1897,19 +1906,19 @@ Usage (In Ghost editor):
 }
 
 .read-next .post-card-excerpt {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--darkgrey);
 }
 
 .read-next .static-avatar {
-    border-color: #000;
+    border-color: var(--darkgrey);
 }
 
 .read-next .post-card-byline-content {
-    color: rgba(255, 255, 255, 0.6);
+    color: var(--darkgrey);
 }
 
 .read-next .post-card-byline-content a {
-    color: rgba(255, 255, 255, 0.8);
+    color: var(--darkgrey);
 }
 
 .read-next-card {
@@ -1943,7 +1952,6 @@ Usage (In Ghost editor):
 }
 
 .read-next-card-header h3 a {
-    color: #fff;
     font-weight: 500;
     text-decoration: none;
     opacity: 0.8;
@@ -1988,7 +1996,6 @@ Usage (In Ghost editor):
 
 .read-next-card-content li a {
     display: block;
-    color: #fff;
     opacity: 0.8;
 }
 
@@ -2927,7 +2934,7 @@ Usage (In Ghost editor):
     }
 
     .post-full-custom-excerpt {
-        color: color(var(--midgrey) l(+10%));
+        color: --darkgrey;
     }
 
     .post-full-image {
